@@ -18,18 +18,21 @@ export default function Forecast(props) {
 
    const styles = StyleSheet.create({
     texts: {
+        
         backgroundColor: '#8EF0F9',
         borderRadius: 20,
         marginTop: 40,
         marginBottom: 10,
-        marginLeft: 100,
-        marginRight: 100,
+        marginLeft: 50,
+        marginRight: 50,
         padding: 5,
         textAlignVertical: "center",
         textAlign: "center",
         fontSize: 25,
         height: 55,
-        color: 'blue'
+        color: 'blue',
+       // width: '80%',
+        //height: '100%',
       
     },
     textC: {

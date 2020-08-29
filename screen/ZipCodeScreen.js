@@ -10,7 +10,9 @@ const availableZipItems = [
     { place: 'Trang', code: '92000' },
     { place: 'Chiangmai', code: '50000' },
     { place: 'Khonkaen', code: '40000' },
-    //{ place: 'Chonburi', code: '20000' },
+    { place: "Chaophraya Surasak", code: "20000" },
+
+    { place: "Nakhon Pathom", code: "70000" },
 
    ]
 const ZipItem = ({place, code, navigation}) => (
@@ -18,8 +20,7 @@ const ZipItem = ({place, code, navigation}) => (
         navigation.navigate('Weather', { zipCode: code})
     }}>
         <View  style = {styles.zipItem}>
-            <Text style={styles.zipPlace}>{place} - {code}</Text>
-            
+            <Text style={styles.zipPlace}>{place} ({code})</Text>
         </View>
     </TouchableHighlight>
 )

@@ -56,8 +56,8 @@ export default function Weather(props) {
             alignItems: 'center',
             width: '100%',
             height: '100%',
-
         },
+        
         bgcenter: {
             flexDirection: 'column',
             justifyContent: 'center',
@@ -67,8 +67,6 @@ export default function Weather(props) {
         },
 
         text: {
-            
-
             textAlign: 'center',
             fontWeight: 'bold',
             marginTop: 0,
