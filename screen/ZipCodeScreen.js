@@ -18,8 +18,8 @@ const ZipItem = ({place, code, navigation}) => (
         navigation.navigate('Weather', { zipCode: code})
     }}>
         <View  style = {styles.zipItem}>
-            <Text>{place}</Text>
-            <Text>{code}</Text>
+            <Text style={styles.zipPlace}>{place}         {code}</Text>
+            
         </View>
     </TouchableHighlight>
 )
@@ -52,17 +52,27 @@ export default function ZipCodeScreen(){
     },
 
        zipItem: {
+           /*
            flex: 1,
            flexDirection: 'row',
            justifyContent: 'space-evenly',
-
+            */
+            backgroundColor: '#37A2E5',
+            borderRadius: 20,
+            marginTop: 40,
+            marginBottom: 10,
+            marginLeft: 50,
+            marginRight: 50,
+            padding: 10
        },
 
        zipPlace: {
-           flex: 1,
+           //flex: 1,
+           textAlign: 'center',
+            fontWeight: 'bold',
+            fontSize: 25,
+            color:'white'
        },
 
-       zipCode: {
-           flex: 1,
-       }
+      
    })
