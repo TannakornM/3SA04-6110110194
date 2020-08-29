@@ -4,6 +4,7 @@ import { Text, View, StyleSheet } from 'react-native';
 export default function Forecast(props) {
     return (
         <View >
+            <Text style = {styles.texts}>{props.name}</Text>
             <Text style = {styles.TextLarge}>{props.main}</Text>
             <Text style = {styles.texts}>{props.description}</Text>
             <View style={{flexDirection: 'row', justifyContent: 'center'}}>

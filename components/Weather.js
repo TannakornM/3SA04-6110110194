@@ -9,7 +9,8 @@ export default function Weather(props) {
 
         main: '-',
         description: '-',
-        temp: 0
+        temp: 0,
+        name: 'city'
     })
 
     
@@ -22,7 +23,8 @@ export default function Weather(props) {
             setForecastInfo({
                 main: json.weather[0].main,
                 description: json.weather[0].description,
-                temp: json.main.temp
+                temp: json.main.temp,
+                name: json.name,
             })
         })
         .catch((error) => {

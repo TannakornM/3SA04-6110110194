@@ -52,11 +52,6 @@ export default function ZipCodeScreen(){
     },
 
        zipItem: {
-           /*
-           flex: 1,
-           flexDirection: 'row',
-           justifyContent: 'space-evenly',
-            */
             backgroundColor: '#37A2E5',
             borderRadius: 20,
             marginTop: 40,
@@ -67,7 +62,6 @@ export default function ZipCodeScreen(){
        },
 
        zipPlace: {
-           //flex: 1,
            textAlign: 'center',
             fontWeight: 'bold',
             fontSize: 25,
