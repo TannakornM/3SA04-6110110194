@@ -6,31 +6,56 @@ export default function Forecast(props) {
         <View >
             <Text style = {styles.texts}>{props.name}</Text>
             <Text style = {styles.TextLarge}>{props.main}</Text>
-            <Text style = {styles.texts}>{props.description}</Text>
-            <View style={{flexDirection: 'row', justifyContent: 'center'}}>
-                <Text style = {styles.TextLarge}>{props.temp} </Text>
-                <Text style = {styles.texts}> °C</Text>
+            <View >
+                <Text style = {styles.TextTemp}>{props.temp} <Text style = {styles.textC}>°C</Text> </Text>
+                
             </View>
+            <Text style = {styles.textdes}>{props.description}</Text>
         </View>
     );
-
+    
    }
 
    const styles = StyleSheet.create({
     texts: {
+        backgroundColor: '#8EF0F9',
+        borderRadius: 20,
+        marginTop: 40,
+        marginBottom: 10,
+        marginLeft: 100,
+        marginRight: 100,
+        padding: 5,
         textAlignVertical: "center",
         textAlign: "center",
-        fontSize: 18,
-        height: 40,
-        color: 'white'
+        fontSize: 25,
+        height: 55,
+        color: 'blue'
       
+    },
+    textC: {
+        fontSize: 18,
+        color: 'white'
     },
     TextLarge: {
         textAlignVertical: "center",
         textAlign: "center",
-        fontSize: 50,
-        height: 100,
+        fontSize: 40,
+        height: 80,
         color: 'white'
     },
-    
+    textdes: {
+        textAlignVertical: "center",
+        textAlign: "center",
+        fontSize: 18,
+        height: 25,
+        color: 'white'
+    },
+    TextTemp: {
+        textAlignVertical: "center",
+        textAlign: "center",
+        fontSize: 60,
+        height: 80,
+        color: 'white'
+    },
+
   }); 

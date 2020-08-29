@@ -6,11 +6,11 @@ import { StatusBar } from 'expo-status-bar'
 
 const availableZipItems = [
     { place: 'Hatyai', code: '90110' },
-    { place: 'Bangkok', code: '10140' },
+    { place: 'Samut Prakan', code: '10140' },
     { place: 'Trang', code: '92000' },
     { place: 'Chiangmai', code: '50000' },
     { place: 'Khonkaen', code: '40000' },
-    { place: 'Chonburi', code: '20000' },
+    //{ place: 'Chonburi', code: '20000' },
 
    ]
 const ZipItem = ({place, code, navigation}) => (
@@ -18,7 +18,7 @@ const ZipItem = ({place, code, navigation}) => (
         navigation.navigate('Weather', { zipCode: code})
     }}>
         <View  style = {styles.zipItem}>
-            <Text style={styles.zipPlace}>{place}         {code}</Text>
+            <Text style={styles.zipPlace}>{place} - {code}</Text>
             
         </View>
     </TouchableHighlight>
